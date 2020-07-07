@@ -1,0 +1,21 @@
+{
+  "builders": [
+    {
+      "type": "amazon-ebs",
+      "ami_name": "jenkins-slave-db48",
+      "instance_type": "t3.small",
+      "source_ami": "ami-04090563c03844c69",
+      "ssh_username": "centos",
+      "region": "us-east-2"
+    }
+  ],
+  "provisioners": [
+    {
+      "type": "shell",
+      "inline": [
+        "sudo yum install java -y"
+      ]
+
+    }
+  ]
+}
