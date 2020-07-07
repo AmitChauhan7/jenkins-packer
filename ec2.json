@@ -13,7 +13,8 @@
     {
       "type": "shell",
       "inline": [
-        "sudo yum install java -y"
+        "sudo yum install java gcc-c++ make -y",
+
       ]
 
     }
