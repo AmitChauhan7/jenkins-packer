@@ -17,7 +17,7 @@
       "inline": [
         "sudo yum install java gcc-c++ make pylint http://rpms.remirepo.net/enterprise/remi-release-7.rpm yum-utils -y",
         "sudo yum-config-manager --enable remi-php73",
-        "yum -y install php php-opcache php73-php-pdo composer"
+        "sudo yum -y install php php-opcache php73-php-pdo composer"
       ]
 
     }
