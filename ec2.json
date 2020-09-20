@@ -4,7 +4,7 @@
       "type": "amazon-ebs",
       "ami_name": "jenkins-tenant-db48",
       "instance_type": "t3.small",
-      "source_ami": "ami-04090563c03844c69",
+      "source_ami": "ami-0ed9d2e6b42fd9de7",
       "ssh_username": "centos",
       "region": "us-east-2",
       "force_deregister": true,
@@ -15,6 +15,7 @@
     {
       "type": "shell",
       "inline": [
+
         "sudo yum install java gcc-c++ make pylint http://rpms.remirepo.net/enterprise/remi-release-7.rpm yum-utils -y",
         "sudo yum-config-manager --enable remi-php73",
         "sudo yum -y install php php-opcache php73-php-pdo composer"
